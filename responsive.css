@@ -1,0 +1,99 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins";
+    overflow-x: hidden;
+    margin: 0px;
+    height: 100%; /* Height set to 100% for full-page display */
+     background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.582)), url("https://akcdn.detik.net.id/visual/2023/09/13/iphone-15-pro-3_169.jpeg?w=650");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 80%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    margin: 0 10%;
+    border-radius: 20px;
+    position: fixed;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.search input {
+    color: black;
+    border: 2px solid black;
+    outline: blue;
+    border-radius: 30px;
+    width: 300px;
+    padding: 10px 0;
+    font-size: 15px;
+}  
+
+/* ... (your existing styles) */
+
+/* Responsive Layout */
+@media only screen and (max-width: 768px) {
+    header {
+        width: 90%;
+        display: none;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .search input {
+        width: 200px;
+    }
+
+    .nav-bar ul li a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .bagian-home {
+        padding-top: 100px;
+    }
+
+    .article {
+        font-size: 40px;
+    }
+
+    .btn a {
+        padding: 20px 45px;
+    }
+
+    .card {
+        width: 100%;
+        height: 450px;
+    }
+
+    .judul-product h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .bx-card {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

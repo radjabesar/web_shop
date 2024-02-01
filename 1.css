@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins";
+    overflow-x: hidden;
+    margin: 0px;
+    height: 699px;
+    background: linear-gradient(rgba(0, 0, 0, 0.459),rgba(0, 0, 0, 0.582));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 40%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+    align-items: center;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    margin: 10%;
+    border-radius: 20px;
+    position: fixed;
+    margin-top: 10px;
+}
+
+.logo{
+    display: flex;
+    margin-right: 5%;
+}
+
+.logo p {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.search{
+    margin: auto;
+}
+
+.search input{
+    color: black;
+    border: 2px solid black;
+    outline: blue;
+    border-radius: 30px;
+    width: 300px;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.search input::placeholder{
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul  li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 20px;
+    padding: 10px 25px;
+    margin: 0 5px;
+    transition: .2s;
+    text-transform: capitalize;
+}
+
+.nav-bar ul li a::after{
+    display: block;
+    content: "";
+    border-bottom: 2px solid #000000;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav-bar ul li a:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-bar ul li a.acrive{
+    color: rgb(54, 54, 53);
+}
+
+.bagian-home {
+    padding-top: 150px;
+}
+
+.article {
+    text-transform: capitalize;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 80%;
+    margin: 100px  auto;
+}
+
+span {
+    color: rgb(147, 143, 143);
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    padding: 25px 65px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.btn a:hover{
+    color: white;
+    background-color: rgb(148, 147, 147);
+    transition: all 0.3s;
+    box-shadow:0 0 30px rgb(0, 0, 0);
+}
+
+.product {
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    height: 1000px;
+}
+
+.judul-product{
+    padding-top: 150px;
+    text-align: center;
+}
+
+.judul-product h1 {
+   font-size: 40px;
+   width: 600px;
+   margin: auto;
+   padding:10px ;
+}
+
+.bx-card {
+    display: flex;
+    justify-content: center;
+    gap: 40px ;
+}
+
+.card{
+    margin-top: 100px;
+    width:280px;
+    height: 565px;
+    background: rgb(251, 251, 253);
+    background: linear-gradient( to bottom,70deg, rgb(219, 219, 221) 0%, rgba(18,71,135,1) 54%);
+    box-shadow: 30px 10px 30px black;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+
+.card:hover{
+    margin-top: 50px;
+    transition: all 0.3s;
+}
+
+.card h1 {
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+}
+
+.spesifikasi{
+    text-align: center;
+}
+
+.spesifikasi ul li {
+    list-style: none;
+    color: rgb(0, 0, 0);
+}
+
+.btn-shop{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-shop a {
+    color: black;
+    background-color: white;
+    padding: 10px 80px;
+    transition: all 0.3s;
+}
+
+.btn-shop a:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.733);
+    transition: all 0.3s;
+}
+
+.bagian-about{
+    height: 800px;
+    background-color: #000000;
+}
+
+.atur-posisi{
+    padding-top: 120px;
+}
+
+aside img {
+    width: 670px;
+}
+
+.isi {
+    display: flex;
+    justify-content: center;
+}
+
+.isi article {
+    margin-left: 40px;
+    color: rgb(255, 255, 255);
+    width: 700px;
+    font-size: 30px;
+}
+
+.isi article p {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.master-engine{
+    height: 900px;
+}
+
+.isi-kadri{
+    text-align: center;
+    width: 900px;
+    margin: 100px auto;
+}
+
+.Pian h1 {
+    font-size: 50px;
+    color: #ffffff;
+}
+.Pian p {
+    color: #ffffff;
+}
+
+.img-engine img {
+    width: 100%;
+}
+
+.item-lain{
+    background-color: black;
+    height: 1400px;
+}
+
+.item-lain h1 {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.bx-cardjual{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-jual{
+    margin-top: 100px;
+    width: 300px;
+    height: 470px;
+    color: white;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.card-jual:hover{
+margin-top: 50px;
+  transition: all 0.3s;
+  box-shadow: 10px 10px 10px rgba(0, 17, 255, 0.658);
+}
+
+.card-jual img {
+    width: 100%;
+}
+
+.detail-jual ul {
+    list-style: none;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn-shop-jual{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn-shop-jual a{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #000000;
+    padding: 15px 50px;
+
+}
+
+.sekilas{
+    height: 800px;
+    background: url(https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2024/site-simp/overview/2024-nissan-gt-r-nismo-driving-down-racetrack.jpg);
+}
+
+.market-place{
+    height: 600px;
+}
+
+.judul-market{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.kumpulan-icon{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: white;
+}
+
+.icon i{
+    margin-top: 80px;
+    font-size: 80px;
+}
+
+.label{
+    text-align: center;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    height: 40px;
+    text-align: center;
+    padding-top: 2%;
+}
